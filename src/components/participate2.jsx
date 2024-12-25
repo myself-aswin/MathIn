@@ -8,7 +8,7 @@ import '../styles/participate2.css';
 import MathInDB from '../assets/mathIn.json';
 
 const Participate2 = () => {
-  const questionBankCount = 2;
+  const questionBankCount = 200;
   const timeLimit = (4.5 * 1000);
   const inactivityLimit = (10 * 60 * 1000);
 
