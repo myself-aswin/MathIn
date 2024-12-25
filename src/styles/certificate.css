@@ -1,0 +1,79 @@
+/* certificate.css */
+
+.certificate-button {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--accent-color1);
+  color: var(--bg-color1);
+  margin: 32px auto;
+  padding: 8px 20px;
+  border: 2.5px solid var(--accent-color1);
+  border-radius: 28px;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.certificate-button:hover {
+  background-color: var(--accent-color3);
+  border: 2px solid var(--accent-color3);
+}
+
+.certificate-icon {
+  margin-left: 14px;
+  width: 18px;
+  vertical-align: middle;
+}
+
+.certificate-button:hover .certificate-icon {
+  transform: translateX(3px);
+}
+
+.certificate-loader-container {
+  background-color: var(--bg-color2);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #020202;
+  margin: 32px auto;
+  padding: 6px 0;
+  cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-loader {
+  margin-right: 1.4rem;
+  width: 25px;
+  height: 25px;
+  border: 5px solid var(--bg-color1);
+  border-radius: 50%;
+  border-top: 5px solid var(--accent-color1);
+  border-bottom: 5px solid var(--accent-color1);
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

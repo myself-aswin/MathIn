@@ -1,0 +1,200 @@
+/* prepare.css */
+
+.prepare-box1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+.prepare-box2 {
+  pointer-events: auto;
+  background-color: var(--bg-color1);
+  margin-bottom: 20px;
+  padding: 15px 20px 20px 20px;
+  border-radius: 16px;
+  width: fit-content;
+  height: min-content;
+  max-height: 85%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prepare-box3 {
+  margin: 0 0 9px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.prepare-download-btn {
+  background-color: var(--accent-color1);
+  color: var(--bg-color1);
+  border: 2px solid var(--accent-color1);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  max-width: fit-content;
+  grid-column: 1 / 2;
+}
+
+.prepare-download-btn:hover {
+  background-color: var(--accent-color3);
+  border: 2px solid var(--accent-color3);
+  color: var(--bg-color1);
+}
+
+.prepare-download-icon {
+  width: 1.3rem;
+  position: relative;
+  display: flex;
+}
+
+.prepare-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.prepare-title img {
+  width: 2.2rem;
+  align-self: center;
+  height: fit-content;
+}
+
+.prepare-title img:nth-of-type(2) {
+  display: inline-block;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes initialLoadAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.prepare-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--accent-color1);
+  margin: 0 2.5vw;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  animation: initialLoadAnimation 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 2;
+}
+
+.prepare-title:hover h1 {
+  animation: hoverAnimation 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) 2;
+}
+
+.prepare-title span {
+  color: var(--accent-color2);
+}
+
+.prepare-close-btn {
+  background-color: var(--accent-color1);
+  color: var(--bg-color1);
+  border: 2px solid var(--accent-color1);
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  max-width: fit-content;
+  grid-column: 3 / 4;
+  justify-self: end;
+}
+
+.prepare-close-btn:hover {
+  background-color: var(--accent-color3);
+  border: 2px solid var(--accent-color3);
+  color: var(--bg-color1);
+}
+
+.prepare-close-btn img {
+  width: 0.9rem;
+  max-width: 1rem;
+  position: relative;
+  display: flex;
+}
+
+.prepare-box4 {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 20px;
+  outline: none;
+  padding-right: 3px;
+  box-sizing: content-box;
+}
+
+/* Scrollbar design */
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5b5b5b;
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4e4e4e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #262d3a;
+  border: 0.5px solid #1e1e1e;
+  border-radius: 0.2rem;
+  box-shadow: inset 7px 10px 12px #3b3a4a73;
+}
