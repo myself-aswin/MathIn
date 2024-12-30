@@ -69,7 +69,7 @@ const Participate0 = () => {
               </div>
 
               <div className="participate0-instruction-item">
-                <p><span>2.</span> The test consists of <span className="participate0-highlight">200 questions</span> -- (100 standard and 100 reverse). Each question is timed at <span className="participate0-highlight">4.5 seconds</span>, making the total test duration <span className="participate0-highlight">15 minutes</span>.</p>
+                <p><span>2.</span> The test consists of <span className="participate0-highlight">200 questions</span> -- (100 standard and 100 reverse). Each question is timed at <span className="participate0-highlight">6 seconds</span>, making the total test duration <span className="participate0-highlight">20 minutes</span>.</p>
               </div>
 
               <div className="participate0-instruction-item">

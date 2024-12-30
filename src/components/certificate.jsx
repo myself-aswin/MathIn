@@ -8,7 +8,6 @@ import '../styles/certificate.css';
 
 const Certificate = ({ onViewed }) => {
   const [isLoading, setIsLoading] = useState(false);
-
   const localUserData = JSON.parse(sessionStorage.getItem("userData"));
   const userName = localUserData.name;
   const userEmail = localUserData.email;

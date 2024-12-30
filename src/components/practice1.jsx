@@ -10,6 +10,7 @@ import MathInDB from '../assets/mathIn.json';
 const Practice1 = ({ fulltitle, screen, onBackButtonClick }) => {
   const inputRef = useRef(null);
   const timeOutId = useRef(null);
+  const timeLimit = (6 * 1000);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [reverseBtn, setReverseBtn] = useState(false);
   const [userInput, setUserInput] = useState('');
@@ -50,10 +51,10 @@ const Practice1 = ({ fulltitle, screen, onBackButtonClick }) => {
       const updateProgress = (timestamp) => {
         if (!start) start = timestamp;
         const elapsed = timestamp - start;
-        const newProgress = Math.min((elapsed / 4500) * 100, 100);
+        const newProgress = Math.min((elapsed / timeLimit) * 100, 100);
         setProgress(newProgress);
 
-        if (elapsed < 4500) {
+        if (elapsed < timeLimit) {
           timeOutId.current = requestAnimationFrame(updateProgress);
         } else {
           handleSubmit();

@@ -13,7 +13,7 @@ const generateUUID = () => {
 };
 
 function formatDateToDDMMMYYYY(date) {
-  const monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const day = date.getDate().toString().padStart(2, "0");
   const month = monthNames[date.getMonth()];
   const year = date.getFullYear();
