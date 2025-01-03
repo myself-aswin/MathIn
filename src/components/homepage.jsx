@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import '../styles/homepage.css';
 import Loader from './loader';
 import Footer from './footer';
-import '../styles/homepage.css';
 
 const Homepage = () => {
   const navigate = useNavigate();

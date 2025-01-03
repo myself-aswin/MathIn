@@ -19,13 +19,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  /* border: 2px solid orange; */
 }
 
 body {
   margin: 20px auto;
   width: fit-content;
-  /* border: 2px solid red; */
 }
 
 

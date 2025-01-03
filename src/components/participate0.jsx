@@ -3,14 +3,14 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Participate1 from './participate1';
-import Loader from './loader';
-import Footer from './footer';
 import '../styles/participate0.css';
-
 const squareTickHoverIcon = `${import.meta.env.BASE_URL}icons/squareTickHover.svg`;
 const squareTickOnIcon = `${import.meta.env.BASE_URL}icons/squareTickOn.svg`;
 const squareTickOffIcon = `${import.meta.env.BASE_URL}icons/squareTickOff.svg`;
+
+import Loader from './loader';
+import Footer from './footer';
+import Participate1 from './participate1';
 
 const Participate0 = () => {
   const navigate = useNavigate();

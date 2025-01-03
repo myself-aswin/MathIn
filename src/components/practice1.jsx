@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-import Footer from './footer';
 import '../styles/practice1.css';
+import Footer from './footer';
+
 import MathInDB from '../assets/mathIn.json';
 
 const Practice1 = ({ fulltitle, screen, onBackButtonClick }) => {

@@ -3,13 +3,13 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
 import { FirebaseTestResult1 } from './firebase1';
 import { FirebaseTestResult2 } from './firebase2';
-import Certificate from './certificate';
+
+import '../styles/participate3.css';
 import Loader from './loader';
 import Footer from './footer';
-import '../styles/participate3.css';
+import Certificate from './certificate';
 
 const Participate3 = ({ score, totalQuestions }) => {
   const navigate = useNavigate();

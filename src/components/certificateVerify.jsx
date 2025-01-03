@@ -5,9 +5,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { db } from "../../firebaseConfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
+import "../styles/certificateVerify.css";
 import Loader from "./loader";
 import Footer from "./footer";
-import "../styles/certificateVerify.css";
 
 const CertificateVerify = () => {
   const { certificateId } = useParams();

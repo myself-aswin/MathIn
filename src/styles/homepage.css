@@ -15,7 +15,6 @@
 
 .homepage-main-title {
   background-color: var(--bg-color1);
-  font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   margin-top: -6px;
   display: flex;
@@ -82,7 +81,6 @@
 }
 
 .homepage-main-title h1 {
-  font-family: 'Montserrat', sans-serif;
   color: var(--accent-color1);
   margin: 0 2.5vw 0 2.5vw;
   text-align: center;

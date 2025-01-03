@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import '../styles/prepare.css';
 import Loader from './loader';
 import Footer from './footer';
-import '../styles/prepare.css';
 
 const Prepare = () => {
   const navigate = useNavigate();

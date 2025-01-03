@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Practice1 from './practice1';
+import '../styles/practice0.css';
 import Loader from './loader';
 import Footer from './footer';
-import '../styles/practice0.css';
+import Practice1 from './practice1';
 
 const Practice0 = () => {
   const navigate = useNavigate();

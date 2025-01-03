@@ -2,9 +2,10 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-import Participate3 from './participate3';
-import Footer from './footer';
 import '../styles/participate2.css';
+import Footer from './footer';
+import Participate3 from './participate3';
+
 import MathInDB from '../assets/mathIn.json';
 
 const Participate2 = () => {

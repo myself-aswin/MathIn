@@ -3,12 +3,12 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
 import { FirebaseTestSetup } from './firebase0';
-import Participate2 from './participate2';
-import Countdown from './countdown';
-import Footer from './footer';
+
 import '../styles/participate1.css';
+import Footer from './footer';
+import Countdown from './countdown';
+import Participate2 from './participate2';
 
 const Participate1 = ({ onBack }) => {
   const navigate = useNavigate();

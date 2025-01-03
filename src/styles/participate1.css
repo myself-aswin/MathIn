@@ -53,7 +53,6 @@
 
 .participate1-main-title {
   background-color: var(--bg-color1);
-  font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   margin-top: -6px;
   display: flex;
@@ -120,7 +119,6 @@
 }
 
 .participate1-main-title h1 {
-  font-family: 'Montserrat', sans-serif;
   color: var(--accent-color1);
   margin: 0 2.5vw 0 2.5vw;
   text-align: center;
@@ -163,7 +161,6 @@
 }
 
 .participate1-subcontainer2 {
-  font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-color2);
   border: 1px solid var(--bg-color2);
   text-align: center;
