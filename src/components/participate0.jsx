@@ -98,7 +98,7 @@ const Participate0 = () => {
                 }}
                 onClick={checkBoxClicked}>
                 <img src={checkBoxIcon} alt="checkBoxIcon" className="participate0-agreement-icon" />
-                <span>I agree to the above Terms & Conditions and proceed to the test.</span>
+                <span>I agree to the above Terms & Conditions and proceed to the test</span>
               </button>
             </div>
 
