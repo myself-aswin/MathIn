@@ -16,7 +16,7 @@ const Participate3 = ({ score, totalQuestions }) => {
   const [testResultUpdated, setTestResultUpdated] = useState(false);
   const [certificateViewed, setCertificateViewed] = useState(false);
   const userData = JSON.parse(sessionStorage.getItem("userData"));
-  const scorePercentage = (score / totalQuestions) * 100;
+  const scorePercentage = ((score / totalQuestions) * 100).toFixed(1);
 
   const handleViewed = () => {
     setCertificateViewed(true);

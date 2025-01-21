@@ -26,9 +26,9 @@ const PingServers = () => {
           "https://mathin-certapi-miqw.onrender.com/health",
           { method: "GET" }
         );
-        console.log(`API Health - Ping successful !`);
+        console.log(`API Health Checkup - Ping successful !`);
       } catch (err) {
-        console.error(`API Health - Ping error after retries: `, err);
+        console.error(`API Health Checkup - Ping error after retries: `, err);
       }
 
       try {
@@ -36,9 +36,9 @@ const PingServers = () => {
           "https://mathin-certapi-miqw.onrender.com/cleanup",
           { method: "GET" }
         );
-        console.log(`API Cleanup - Ping successful !`);
+        console.log(`API Data Cleanup - Ping successful !`);
       } catch (err) {
-        console.error(`API Cleanup - Ping error after retries: `, err);
+        console.error(`API Data Cleanup - Ping error after retries: `, err);
       }
     };
 
