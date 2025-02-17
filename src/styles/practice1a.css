@@ -141,14 +141,15 @@
 }
 
 .practice1a-subtitle {
-  color: var(--accent-color2);
-  letter-spacing: 1px;
+  color: #bbc6be;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 2.4px;
   max-width: fit-content;
   margin: 0 auto;
   padding: 5px 20px;
   text-align: center;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
