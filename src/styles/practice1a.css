@@ -201,13 +201,19 @@
   min-width: 30px;
 }
 
+.table-label:hover {
+  color: var(--accent-color3);
+  border: 2px solid var(--accent-color3);
+}
+
 input[type="checkbox"] {
   display: none;
 }
 
 input[type="checkbox"]:checked+.table-label {
-  background-color: var(--accent-color1);
+  background-color: #2ae070;
   color: var(--bg-color1);
+  border: 2px solid #2ae070;
 }
 
 .practice1a-proceed-btn-disabled:disabled {
