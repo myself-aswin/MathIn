@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/practice0.css';
 import Loader from './loader';
 import Footer from './footer';
-import Practice1 from './practice1';
+import Practice1a from './practice1a';
+import Practice2 from './practice2';
 
 const Practice0 = () => {
   const navigate = useNavigate();
@@ -29,7 +30,12 @@ const Practice0 = () => {
 
   const handlePracticeClick = (option) => {
     setPracticeDetails({ fulltitle: [option.title, option.subtitle], screen: option.screen });
-    setCurrentPractice('Practice1');
+
+    if (option.title === 'Tables') {
+      setCurrentPractice('Practice1a');
+    } else {
+      setCurrentPractice('Practice2');
+    }
   };
 
   const handleClose = () => {
@@ -41,13 +47,7 @@ const Practice0 = () => {
   }
 
   return (
-    currentPractice === 'Practice1' ? (
-      <Practice1
-        fulltitle={practiceDetails.fulltitle}
-        screen={practiceDetails.screen}
-        onBackButtonClick={() => setCurrentPractice(null)}
-      />
-    ) : (
+    currentPractice === null ? (
       <>
         <div className="practice0-container">
           <div className='practice0-subcontainer'>
@@ -77,7 +77,21 @@ const Practice0 = () => {
 
         <Footer />
       </>
-    )
+    ) :
+
+      (
+        currentPractice === 'Practice1a' ? (
+          <Practice1a
+            onBackButtonClick={() => setCurrentPractice(null)}
+          />
+        ) : (
+          <Practice2
+            fulltitle={practiceDetails.fulltitle}
+            screen={practiceDetails.screen}
+            onBackButtonClick={() => setCurrentPractice(null)}
+          />
+        )
+      )
   );
 };
 
